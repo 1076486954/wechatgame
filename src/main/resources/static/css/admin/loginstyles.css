@@ -1,0 +1,17 @@
+﻿.inputstyle{
+	/* float: left; */
+	height: 30px;
+	border-radius: 5px;
+	border:1px solid #DBDBDB;
+	padding-left: 5px;
+}
+.loginbtn{
+	width: 200px;
+    text-align: center;
+    background-color: #ccc;
+    height: 40px;
+    line-height: 40px;
+    font-size: 17px;
+    border-radius: 5px;
+    color: white;
+}
