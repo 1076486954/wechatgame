@@ -114,9 +114,10 @@ public class ShiroConfig {
         /* anon：它对应的过滤器里面是空的,什么都没做,可以理解为不拦截
          * authc:所有url都必须认证通过才可以访问,它是一个内置的拦截器; anon:所有url都都可以匿名访问
          * 配置时按照从上到下的顺序书写*/
-        filterChainMap.put("/static/**", "anon");
+        filterChainMap.put("/**", "anon");
+        /*filterChainMap.put("/static/**", "anon");
         filterChainMap.put("/login", "anon");
-        filterChainMap.put("/**", "authc");
+        filterChainMap.put("/**", "authc");*/
         factoryBean.setFilterChainDefinitionMap(filterChainMap);
         logger.info("++++++++++++++ShiroFilterFactoryBean Success+++++++++++++++++++++++++");
         return factoryBean;
